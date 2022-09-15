@@ -1,5 +1,5 @@
 {% set name = "webdataset" %}
-{% set version = "0.2.20" %}
+{% set version = "0.2.25" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/webdataset-{{ version }}.tar.gz
-  sha256: 156eecb186896d8ad3cc72b71be8ffb966ead74990e07ca5815c39929efdcfa9
+  sha256: 836f64b5eabdabb419168b1f8fac0030631feab32e66f4eca708e0e10d13a08c
 
 build:
   noarch: python
