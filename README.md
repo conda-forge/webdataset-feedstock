@@ -1,11 +1,11 @@
-About webdataset
-================
+About webdataset-feedstock
+==========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/webdataset-feedstock/blob/main/LICENSE.txt)
 
 Home: http://github.com/webdataset/webdataset
 
 Package license: BSD-3-Clause
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/webdataset-feedstock/blob/main/LICENSE.txt)
 
 Summary: Record sequential storage for deep learning.
 
