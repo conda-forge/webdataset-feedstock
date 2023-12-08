@@ -144,5 +144,4 @@ Feedstock Maintainers
 =====================
 
 * [@ap--](https://github.com/ap--/)
-* [@hadim](https://github.com/hadim/)
 
