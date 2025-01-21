@@ -6,22 +6,22 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/webdataset-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/webdataset-{{ version }}.tar.gz
   sha256: 798e30ff700277f0b963dc0395f3b9de4971a67cffc7cb6d0cb9225df7b68e42
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
 
 requirements:
   host:
     - pip
-    - python >=3.6
+    - python {{ python_min }}
   run:
     - braceexpand
     - numpy
-    - python >=3.6
+    - python >={{ python_min }}
     - pyyaml
     - pytorch
 
@@ -32,6 +32,7 @@ test:
     - pip check
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: http://github.com/webdataset/webdataset
